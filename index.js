@@ -28,5 +28,5 @@ function driversByName(drivers){
 }
 
 function totalRevenue(drivers){
-  const revenues = drivers.map(dr => dr.revenue);
+  return revenues = drivers.map(dr => dr.revenue);
 }
