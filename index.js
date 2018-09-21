@@ -20,6 +20,6 @@ function logDriversByHometown(drivers, hometown) {
 
 function driversByRevenue(divers){
   const sortedDrivers = drivers.sort(function (a, b) {
-  return a.value - b.value;
-});
+    return a.revenue - b.revenue;
+  });
 }
