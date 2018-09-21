@@ -13,12 +13,12 @@ function logDriversByHometown(drivers, hometown) {
   })
 }
 
-function driversByRevenue(drivers){
-  return [...drivers].sort((a,b) => (a.revenue > b.revenue) ? 1 : (a.revenue < b.revenue) ? -1 : 0);
-}
-
 // function driversByRevenue(drivers){
-//   return [...drivers].sort(function (a, b) {
-//     return a.revenue - b.revenue;
-//   });
+//   return [...drivers].sort((a,b) => (a.revenue > b.revenue) ? 1 : (a.revenue < b.revenue) ? -1 : 0);
 // }
+
+function driversByRevenue(drivers){
+  return [...drivers].sort(function (a, b) {
+    return a.revenue - b.revenue;
+  });
+}
