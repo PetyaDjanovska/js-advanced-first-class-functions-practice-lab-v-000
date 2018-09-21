@@ -12,3 +12,7 @@ function logDriversByHometown(drivers, hometown) {
     }
   })
 }
+
+function driversByRevenue(drivers){
+  return drivers.sort((a,b) => (a.last_nom > b.last_nom) ? 1 : ((b.last_nom > a.last_nom) ? -1 : 0); )
+}
