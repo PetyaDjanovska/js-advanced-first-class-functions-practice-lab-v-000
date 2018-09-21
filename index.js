@@ -24,7 +24,5 @@ function driversByRevenue(drivers){
 }
 
 function driversByName(drivers){
-  return [...drivers].sort(function (a, b) {
-    return a.name - b.name;
-  });
+  return [...drivers].sort((a,b) => (a.name > b.name) ? 1 : (a.name < b.name) ? -1 : 0);
 }
