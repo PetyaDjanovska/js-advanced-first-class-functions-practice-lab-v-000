@@ -26,3 +26,7 @@ function driversByRevenue(drivers){
 function driversByName(drivers){
   return [...drivers].sort((a,b) => (a.name > b.name) ? 1 : (a.name < b.name) ? -1 : 0);
 }
+
+function totalRevenue(drivers){
+  const revenues = drivers.map(dr => dr.revenue);
+}
